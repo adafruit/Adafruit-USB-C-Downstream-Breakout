@@ -1,6 +1,6 @@
-# Adafruit-USB-C-Breakout
+# Adafruit USB Type C Downstream Breakout
 
-PCB files for the Adafruit USB C Breakout
+PCB files for the Adafruit USB Type C Downstream Breakout
 
 PCB format is EagleCAD schematic and board layout
 
