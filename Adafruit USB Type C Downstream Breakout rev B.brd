@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -35,7 +35,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -182,7 +182,8 @@
 <text x="3.81" y="3.81" size="0.8128" layer="21" font="vector" ratio="14" rot="R180" align="top-center">SBU1</text>
 <text x="2.286" y="1.27" size="0.8128" layer="21" font="vector" ratio="14" align="top-center">CC2</text>
 <text x="6.604" y="13.462" size="1.016" layer="22" font="vector" ratio="14" rot="MR180">adafruit!</text>
-<text x="10.16" y="4.826" size="1.016" layer="22" font="vector" ratio="14" rot="MR180" align="center">downstream
+<text x="10.16" y="6.858" size="1.016" layer="22" font="vector" ratio="14" distance="100" rot="MR180" align="center">downstream
+(periph.)
 USB C Breakout</text>
 <dimension x1="20.32" y1="-1.27" x2="0" y2="-1.27" x3="10.16" y3="-2.54" textsize="1.778" layer="47" unit="inch"/>
 <dimension x1="21.59" y1="0" x2="21.59" y2="13.97" x3="22.86" y3="6.985" textsize="1.778" layer="47" unit="inch"/>
@@ -1562,7 +1563,7 @@ Set version with global board attribute '&gt;REV'</description>
 </library>
 </libraries>
 <attributes>
-<attribute name="REV" value="A"/>
+<attribute name="REV" value="B"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -1757,35 +1758,35 @@ einem neuen Namen ab.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="FID1" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="12.7" y="9.398" smashed="yes" rot="R180">
+<element name="FID1" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="12.7" y="9.398" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="-2.54" y="30.988" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="FID2" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="7.62" y="12.573" smashed="yes" rot="R180">
+<element name="FID2" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="7.62" y="12.573" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="-11.43" y="34.163" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$1" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="17.78" y="11.43" smashed="yes" rot="R180">
+<element name="U$1" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="17.78" y="11.43" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="-7.62" y="13.97" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$2" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="2.54" y="11.43" smashed="yes" rot="R180">
+<element name="U$2" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="2.54" y="11.43" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="-12.7" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="X1" library="microbuilder" package="USB_C_CUSB31-CFM2AX-01-X" value="" x="10.16" y="13.97" smashed="yes" rot="R180">
+<element name="X1" library="microbuilder" package="USB_C_CUSB31-CFM2AX-01-X" value="" x="10.16" y="13.97" rot="R180">
 <attribute name="NAME" x="12.91" y="13.72" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="11.66" y="13.72" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="U$3" library="microbuilder" package="ADAFRUIT_2.5MM" value="" x="18.796" y="9.144" smashed="yes" rot="R180"/>
-<element name="JP1" library="microbuilder" package="1X08_ROUND_76" value="" x="10.16" y="2.54" smashed="yes" rot="R180">
+<element name="U$3" library="microbuilder" package="ADAFRUIT_2.5MM" value="" x="18.796" y="9.144" rot="R180"/>
+<element name="JP1" library="microbuilder" package="1X08_ROUND_76" value="" x="10.16" y="2.54" rot="R180">
 <attribute name="VALUE" x="20.32" y="5.715" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R1" library="microbuilder" package="0603-NO" value="5.1K" x="2.032" y="5.842" smashed="yes">
+<element name="R1" library="microbuilder" package="0603-NO" value="5.1K" x="2.032" y="5.842">
 <attribute name="NAME" x="3.81" y="5.715" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="3.81" y="5.08" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="R2" library="microbuilder" package="0603-NO" value="5.1K" x="2.032" y="7.62" smashed="yes">
+<element name="R2" library="microbuilder" package="0603-NO" value="5.1K" x="2.032" y="7.62">
 <attribute name="NAME" x="3.81" y="7.493" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="3.81" y="6.858" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="U$8" library="microbuilder" package="PCBFEAT-REV-040" value="" x="1.6256" y="4.8768" smashed="yes" rot="MR180">
+<element name="U$8" library="microbuilder" package="PCBFEAT-REV-040" value="" x="1.6256" y="4.8768" rot="MR180">
 <attribute name="REV" x="1.27" y="5.3848" size="1.016" layer="22" ratio="20" rot="MR180"/>
 </element>
 </elements>
@@ -1876,6 +1877,14 @@ einem neuen Namen ab.</description>
 <contactref element="JP1" pad="4"/>
 <wire x1="11.41" y1="6.615" x2="11.41" y2="2.56" width="0.254" layer="1"/>
 <wire x1="11.41" y1="2.56" x2="11.43" y2="2.54" width="0.254" layer="1"/>
+<contactref element="R2" pad="2"/>
+<wire x1="5.14461875" y1="9.0932" x2="8.06338125" y2="9.0932" width="0.254" layer="1"/>
+<wire x1="2.882" y1="7.62" x2="3.67141875" y2="7.62" width="0.254" layer="1"/>
+<wire x1="8.06338125" y1="9.0932" x2="8.52058125" y2="8.636" width="0.254" layer="1"/>
+<wire x1="3.67141875" y1="7.62" x2="5.14461875" y2="9.0932" width="0.254" layer="1"/>
+<wire x1="10.922" y1="8.636" x2="8.52058125" y2="8.636" width="0.254" layer="1"/>
+<wire x1="11.41" y1="6.615" x2="11.41" y2="8.148" width="0.254" layer="1"/>
+<wire x1="11.41" y1="8.148" x2="10.922" y2="8.636" width="0.254" layer="1"/>
 </signal>
 <signal name="CC2">
 <contactref element="X1" pad="B5"/>
@@ -1887,34 +1896,28 @@ einem neuen Namen ab.</description>
 <wire x1="8.3777" y1="5.21428125" x2="7.55761875" y2="4.3942" width="0.254" layer="1"/>
 <wire x1="2.794" y1="4.064" x2="1.27" y2="2.54" width="0.254" layer="1"/>
 <wire x1="4.68741875" y1="4.064" x2="2.794" y2="4.064" width="0.254" layer="1"/>
+<contactref element="R1" pad="2"/>
+<wire x1="8.41" y1="6.615" x2="8.41" y2="8.1" width="0.254" layer="1"/>
+<wire x1="8.41" y1="8.1" x2="7.874" y2="8.636" width="0.254" layer="1"/>
+<wire x1="4.572" y1="7.874" x2="4.572" y2="6.35" width="0.254" layer="1"/>
+<wire x1="4.572" y1="6.35" x2="4.064" y2="5.842" width="0.254" layer="1"/>
+<wire x1="4.064" y1="5.842" x2="2.882" y2="5.842" width="0.254" layer="1"/>
+<wire x1="7.874" y1="8.636" x2="5.334" y2="8.636" width="0.254" layer="1"/>
+<wire x1="5.334" y1="8.636" x2="4.572" y2="7.874" width="0.254" layer="1"/>
 </signal>
 <signal name="SBU1">
 <contactref element="X1" pad="A8"/>
 <contactref element="JP1" pad="7"/>
-<contactref element="R1" pad="2"/>
 <wire x1="8.91" y1="6.615" x2="8.91" y2="5.1" width="0.2032" layer="1"/>
 <wire x1="8.91" y1="5.1" x2="7.747" y2="3.937" width="0.2032" layer="1"/>
 <wire x1="7.747" y1="3.937" x2="5.207" y2="3.937" width="0.2032" layer="1"/>
 <wire x1="5.207" y1="3.937" x2="3.81" y2="2.54" width="0.2032" layer="1"/>
-<wire x1="8.91" y1="6.615" x2="8.91" y2="8.108" width="0.254" layer="1"/>
-<wire x1="8.91" y1="8.108" x2="8.128" y2="8.89" width="0.254" layer="1"/>
-<wire x1="4.318" y1="8.89" x2="3.81" y2="8.382" width="0.254" layer="1"/>
-<wire x1="3.81" y1="8.382" x2="3.81" y2="6.096" width="0.254" layer="1"/>
-<wire x1="3.81" y1="6.096" x2="3.556" y2="5.842" width="0.254" layer="1"/>
-<wire x1="3.556" y1="5.842" x2="2.882" y2="5.842" width="0.254" layer="1"/>
-<wire x1="8.128" y1="8.89" x2="4.318" y2="8.89" width="0.254" layer="1"/>
 </signal>
 <signal name="SBU2">
 <contactref element="X1" pad="B8"/>
 <contactref element="JP1" pad="3"/>
-<contactref element="R2" pad="2"/>
 <wire x1="11.91" y1="6.615" x2="11.91" y2="4.6" width="0.254" layer="1"/>
 <wire x1="11.91" y1="4.6" x2="13.97" y2="2.54" width="0.254" layer="1"/>
-<wire x1="2.882" y1="7.62" x2="2.882" y2="8.47" width="0.254" layer="1"/>
-<wire x1="2.882" y1="8.47" x2="3.81" y2="9.398" width="0.254" layer="1"/>
-<wire x1="10.16" y1="9.398" x2="3.81" y2="9.398" width="0.254" layer="1"/>
-<wire x1="11.91" y1="6.615" x2="11.91" y2="7.648" width="0.254" layer="1"/>
-<wire x1="11.91" y1="7.648" x2="10.16" y2="9.398" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -1925,10 +1928,10 @@ einem neuen Namen ab.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="4,1,d02eb981edb35cfe"/>
-<approved hash="4,1,fcf2b5a6fe692fd3"/>
-<approved hash="4,1,ef8490a18038f1aa"/>
-<approved hash="4,1,5860feec80f3af5f"/>
+<approved hash="4,1,43677e3c64442444"/>
+<approved hash="4,1,869bbcb71d1eb586"/>
+<approved hash="4,1,867be7a0ba160975"/>
+<approved hash="4,1,9400a786adbc64f6"/>
 </errors>
 </board>
 </drawing>

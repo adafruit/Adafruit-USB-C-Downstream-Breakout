@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1549,11 +1549,16 @@ DIN A4, landscape with location and doc. field</description>
 <sheets>
 <sheet>
 <plain>
-<text x="180.34" y="88.9" size="1.778" layer="97">Set to UFP (Peripheral)</text>
+<text x="182.88" y="81.28" size="1.778" layer="97">Set to UFP (Peripheral)
+Also marks this as a USB 2.0 peripheral device
+
+For DFP (Host) you need pullups
+here instead of pulldowns.</text>
+<text x="182.88" y="96.52" size="1.778" layer="97">Upstream/Downstream Facing Port Setup:</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$3" x="134.62" y="2.54">
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME1" gate="G$3" x="134.62" y="2.54" smashed="yes">
 <attribute name="SHEET" x="243.5352" y="5.3848" size="2.54" layer="94" font="vector" ratio="10"/>
 <attribute name="DRAWING_NAME" x="167.6527" y="5.3848" size="2.54" layer="94" ratio="10"/>
 <attribute name="LAST_DATE_TIME" x="167.3352" y="11.7348" size="2.54" layer="94" ratio="10"/>
@@ -1562,36 +1567,36 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="YEAR" x="247.0277" y="33.0073" size="1.778" layer="94" ratio="12"/>
 <attribute name="REV" x="248.6152" y="21.2598" size="3.81" layer="94" ratio="12"/>
 </instance>
-<instance part="X1" gate="G$1" x="111.76" y="101.6">
+<instance part="X1" gate="G$1" x="111.76" y="101.6" smashed="yes">
 <attribute name="NAME" x="101.6" y="87.376" size="1.27" layer="95"/>
 <attribute name="VALUE" x="101.6" y="88.9" size="1.27" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="254" y="40.64"/>
-<instance part="U$2" gate="G$1" x="248.92" y="40.64"/>
-<instance part="FID1" gate="G$1" x="254" y="45.72"/>
-<instance part="FID2" gate="G$1" x="248.92" y="45.72"/>
-<instance part="JP1" gate="A" x="165.1" y="101.6">
+<instance part="U$1" gate="G$1" x="254" y="40.64" smashed="yes"/>
+<instance part="U$2" gate="G$1" x="248.92" y="40.64" smashed="yes"/>
+<instance part="FID1" gate="G$1" x="254" y="45.72" smashed="yes"/>
+<instance part="FID2" gate="G$1" x="248.92" y="45.72" smashed="yes"/>
+<instance part="JP1" gate="A" x="165.1" y="101.6" smashed="yes">
 <attribute name="NAME" x="158.75" y="114.935" size="1.778" layer="95"/>
 <attribute name="VALUE" x="158.75" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="172.72" y="88.9" rot="R90">
-<attribute name="NAME" x="170.18" y="88.9" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="172.72" y="88.9" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
+<instance part="R1" gate="G$1" x="172.72" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="170.18" y="86.36" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="172.72" y="86.36" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="R2" gate="G$1" x="177.8" y="88.9" rot="R90">
-<attribute name="NAME" x="175.26" y="88.9" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="177.8" y="88.9" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
+<instance part="R2" gate="G$1" x="177.8" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="175.26" y="86.36" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="177.8" y="86.36" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="U$4" gate="G$1" x="172.72" y="78.74">
-<attribute name="VALUE" x="171.196" y="76.2" size="1.27" layer="96"/>
+<instance part="U$4" gate="G$1" x="172.72" y="76.2" smashed="yes">
+<attribute name="VALUE" x="171.196" y="73.66" size="1.27" layer="96"/>
 </instance>
-<instance part="U$5" gate="G$1" x="177.8" y="78.74">
-<attribute name="VALUE" x="176.276" y="76.2" size="1.27" layer="96"/>
+<instance part="U$5" gate="G$1" x="177.8" y="76.2" smashed="yes">
+<attribute name="VALUE" x="176.276" y="73.66" size="1.27" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="137.16" y="86.36">
+<instance part="U$6" gate="G$1" x="137.16" y="86.36" smashed="yes">
 <attribute name="VALUE" x="135.636" y="83.82" size="1.27" layer="96"/>
 </instance>
-<instance part="U$7" gate="G$1" x="144.78" y="86.36">
+<instance part="U$7" gate="G$1" x="144.78" y="86.36" smashed="yes">
 <attribute name="VALUE" x="143.256" y="83.82" size="1.27" layer="96"/>
 </instance>
 </instances>
@@ -1616,12 +1621,12 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="172.72" y1="83.82" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="81.28" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="U$5" gate="G$1" pin="GND"/>
-<wire x1="177.8" y1="83.82" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="78.74" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -1670,6 +1675,10 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="147.32" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="4"/>
 <label x="147.32" y="104.14" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="104.14" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<junction x="162.56" y="104.14"/>
 </segment>
 </net>
 <net name="CC2" class="0">
@@ -1682,6 +1691,10 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="147.32" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="8"/>
 <label x="147.32" y="93.98" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="93.98" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
+<junction x="162.56" y="93.98"/>
 </segment>
 </net>
 <net name="SBU1" class="0">
@@ -1694,10 +1707,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="147.32" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="7"/>
 <label x="147.32" y="96.52" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="96.52" x2="172.72" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="96.52" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
-<junction x="162.56" y="96.52"/>
 </segment>
 </net>
 <net name="SBU2" class="0">
@@ -1710,10 +1719,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="147.32" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
 <label x="147.32" y="106.68" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="106.68" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<junction x="162.56" y="106.68"/>
 </segment>
 </net>
 </nets>
@@ -1721,4 +1726,10 @@ DIN A4, landscape with location and doc. field</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
